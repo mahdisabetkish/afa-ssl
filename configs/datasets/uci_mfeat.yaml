@@ -1,0 +1,7 @@
+name: uci_mfeat
+kind: uci_tabular
+source: mfeat
+n_features: 200
+n_test: 400
+max_samples: 2000
+raw_dir: data/raw/uci_tabular

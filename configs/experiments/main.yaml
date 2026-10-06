@@ -1,0 +1,4 @@
+# Main comparison grid.
+experiment: main
+acq:
+  methods: [rand, static_sup, unc, eig_sup, er_sup, ecd_sup, eig_sup_ens, ssl_rand, ens_rand, ours_sslonly, ours]

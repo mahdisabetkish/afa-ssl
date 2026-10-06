@@ -1,0 +1,11 @@
+name: metabric_semisynth
+kind: metabric_semisynth
+n_features: 200
+n_test: 400
+max_samples: 2000
+raw_dir: data/raw/brca_metabric
+n_groups: 20        # correlation clusters
+n_causal: 6
+n_classes: 3
+target_bayes_acc: 0.85
+sim_seed: 12345

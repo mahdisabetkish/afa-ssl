@@ -1,0 +1,24 @@
+# data and run artefacts
+/data/*
+!/data/README.md
+/experiments/
+/logs/
+/paper/tables/*
+!/paper/tables/.gitkeep
+/paper/figures/*
+!/paper/figures/.gitkeep
+*.pt
+*.pkl
+*.npz
+*.npy
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+# misc
+.DS_Store
+*.swp

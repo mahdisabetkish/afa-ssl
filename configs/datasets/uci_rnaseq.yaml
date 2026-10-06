@@ -1,0 +1,7 @@
+name: uci_rnaseq
+kind: uci_rnaseq
+n_features: 200
+n_test: 200
+max_samples: 2000
+raw_dir: data/raw
+raw_url: https://archive.ics.uci.edu/static/public/401/gene+expression+cancer+rna+seq.zip

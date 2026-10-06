@@ -1,0 +1,7 @@
+# Trivial end-to-end run: tiny models, few steps, two methods.
+experiment: smoke
+model: {hidden: 32, latent: 16}
+sup_model: {hidden: 32, latent: 16}
+train: {ssl_steps: 200, ssl_eval_every: 50, sup_steps: 100, head_steps: 100}
+baseline: {pvae_steps: 150, pvae_eval_every: 50, dime_steps: 100}
+acq: {budget: 5, methods: [rand, ssl_rand, ours, eddi, eddi_ssl, dime]}

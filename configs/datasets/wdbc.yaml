@@ -1,0 +1,4 @@
+name: wdbc
+kind: wdbc
+n_test: 150
+max_samples: 2000

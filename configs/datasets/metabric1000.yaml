@@ -1,0 +1,7 @@
+name: metabric1000
+kind: metabric
+n_features: 1000
+n_test: 400
+max_samples: 2000
+label_col: CLAUDIN_SUBTYPE
+raw_dir: data/raw/brca_metabric

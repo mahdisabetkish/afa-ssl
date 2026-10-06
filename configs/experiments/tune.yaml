@@ -1,0 +1,5 @@
+# Hyper-parameter selection on METABRIC at 200 labels, validation rows from the pool.
+experiment: tune
+data: {tune_mode: true, n_val: 300}
+acq:
+  methods: [eig_sup, ours]

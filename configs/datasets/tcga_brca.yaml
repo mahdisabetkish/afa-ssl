@@ -1,0 +1,8 @@
+name: tcga_brca
+kind: tcga_brca
+n_features: 200
+n_test: 300
+max_samples: 2000
+label_col: PAM50Call_RNAseq
+raw_dir: data/raw/tcga_brca
+raw_url: https://tcga.xenahubs.net/download/TCGA.BRCA.sampleMap/HiSeqV2.gz

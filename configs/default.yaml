@@ -1,0 +1,76 @@
+# Global defaults. Experiment files override these; the dataset block comes from configs/datasets/.
+experiment: default
+seed: 0
+n_labels: 50
+threads: 4
+max_ram_gb: 6.0
+out_root: experiments
+log_root: logs
+data_root: data/processed
+model:
+  hidden: 128
+  latent: 64
+  n_layers: 2
+  dropout: 0.0
+  head: linear
+  ssl_objective: gaussian_nll
+  logvar_min: -6.0
+  logvar_max: 4.0
+sup_model:
+  hidden: 128
+  latent: 64
+  n_layers: 2
+  dropout: 0.0
+mask:
+  budget_mix: 0.5
+  budget_max: 20
+train:
+  ssl_steps: 3000
+  ssl_lr: 0.003
+  ssl_wd: 0.00001
+  ssl_batch: 128
+  ssl_val_frac: 0.1
+  ssl_eval_every: 100
+  ssl_pool_frac: 1.0
+  sup_steps: 1500
+  sup_lr: 0.001
+  sup_wd: 0.0001
+  sup_batch: 64
+  head_steps: 1500
+  head_lr: 0.003
+  head_wd: 0.001
+  head_batch: 64
+  finetune: true
+  ft_lr_encoder: 0.0001
+  distill_weight: 0.0
+  distill_batch: 128
+  mix_folds: 0
+  mix_grid: [0.0, 0.25, 0.5, 0.75, 1.0]
+  mix_masks: 20
+  mix_fixed: 0.5
+  max_minutes: 30.0
+acq:
+  budget: 20
+  gh_nodes: 3
+  cost_model: uniform
+  cost_tiers: [1.0, 2.0, 4.0]
+  cost_budget: null
+  chunk_rows: 64
+  methods: [rand, static_sup, unc, eig_sup, er_sup, ecd_sup, eig_sup_ens, ssl_rand, ens_rand, ours_sslonly, ours]
+baseline:
+  pvae_emb: 16
+  pvae_hidden: 128
+  pvae_latent: 16
+  pvae_lr: 0.003
+  pvae_wd: 0.00001
+  pvae_steps: 3000
+  pvae_batch: 128
+  pvae_eval_every: 100
+  pvae_latent_samples: 1
+  pvae_label_weight: null
+  pvae_label_obs_prob: 0.5
+  dime_hidden: 64
+  dime_lr: 0.001
+  dime_wd: 0.0001
+  dime_steps: 1500
+  dime_batch: 64

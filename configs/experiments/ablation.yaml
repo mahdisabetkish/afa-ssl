@@ -1,0 +1,4 @@
+# Component ablations: predictive model, conditional model, criterion, pretraining.
+experiment: ablation
+acq:
+  methods: [ours, ours_sslonly, ours_supcond, sup_eig_sslcond, ens_er, ens_ecd, ens_unc, ens_static, eig_sup_mfa, ours_frozen, ssl_eig_gausspool]

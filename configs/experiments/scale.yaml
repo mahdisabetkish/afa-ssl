@@ -1,0 +1,5 @@
+# Scale-up: 1,000 genes. Fewer methods to keep candidate scoring affordable.
+experiment: scale
+acq:
+  chunk_rows: 32
+  methods: [rand, static_sup, eig_sup, eig_sup_ens, ens_rand, ours]

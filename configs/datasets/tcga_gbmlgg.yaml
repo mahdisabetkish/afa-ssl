@@ -1,0 +1,10 @@
+name: tcga_gbmlgg
+kind: tcga_subtype
+n_features: 200
+n_test: 200
+max_samples: 2000
+label_col: Subtype_mRNA
+label_file: data/raw/tcga_subtypes/TCGASubtype.20170308.tsv.gz
+subtype_cancer: GBM_LGG
+raw_dir: data/raw/tcga_GBMLGG
+raw_url: https://tcga.xenahubs.net/download/TCGA.GBMLGG.sampleMap/HiSeqV2.gz

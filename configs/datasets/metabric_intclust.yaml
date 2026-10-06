@@ -1,0 +1,8 @@
+name: metabric_intclust
+kind: metabric
+n_features: 200
+n_test: 400
+max_samples: 2000
+label_col: INTCLUST
+label_file: patient
+raw_dir: data/raw/brca_metabric

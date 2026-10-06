@@ -1,0 +1,2 @@
+# Secondary experiment "poolfrac"; the varied settings are passed with --set from scripts/reproduce.py.
+experiment: poolfrac

@@ -1,0 +1,7 @@
+name: uci_har
+kind: uci_tabular
+source: har
+n_features: 200
+n_test: 400
+max_samples: 2000
+raw_dir: data/raw/uci_tabular

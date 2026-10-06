@@ -1,0 +1,11 @@
+name: synth_scm
+kind: synth_scm
+n_samples: 2000
+n_test: 500
+n_groups: 10
+group_size: 10
+n_causal: 5
+n_classes: 3
+target_bayes_acc: 0.85
+within_corr: [0.5, 0.85]
+sim_seed: 12345

@@ -1,0 +1,5 @@
+# Heterogeneous costs {1,2,4}: cost-aware versus cost-blind scoring (C5).
+experiment: cost
+acq:
+  cost_model: tiers
+  methods: [rand, eig_sup, eig_sup_costblind, ours, ours_costblind]

@@ -1,0 +1,7 @@
+name: uci_satimage
+kind: uci_tabular
+source: satimage
+n_features: 200
+n_test: 400
+max_samples: 2000
+raw_dir: data/raw/uci_tabular
